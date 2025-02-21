@@ -1,0 +1,103 @@
+import ArticleLayout from "@/components/ArticleLayout";
+import designSystem from "./planetaria-design-system.png";
+
+export const article = {
+  author: "Jay Louie",
+  date: "2025-01-27",
+  title: "Web-Based Car Rental Reservation System",
+  description:
+    "The web system features a dynamic and user-friendly interface that enables customers to view available vehicles, select rental dates, and confirm reservations with ease. Built using modern web technologies, the back-end ensures secure data handling and efficient reservation management. This system not only simplifies the reservation process but also reduces potential booking conflicts by providing real-time availability updates.",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => <ArticleLayout article={article} {...props} />;
+
+The "Ride Ready Ateneo Vehicle Reservation System" is a web-based platform developed to streamline transportation services at Ateneo de Zamboanga University. Designed to enhance operational efficiency, the system simplifies vehicle reservation for the university’s community, ensuring convenience and effective resource allocation
+
+<Image src={designSystem} alt="" />
+
+## Ride Ready Ateneo Vehicle Reservation System
+
+This image showcases the "Ride Ready Ateneo Vehicle Reservation System," a web-based platform designed for Ateneo de Zamboanga University. The system aims to efficiently allocate transportation resources, reduce costs, and enhance convenience for users. By streamlining the reservation process, it allows the Physical Plant Office to manage transportation services more effectively, ensuring better coordination and collaboration within the university community. This initiative reflects Ateneo’s commitment to innovation and continuous service improvement to meet the needs of its students, faculty, and staff.
+
+```c
+<?php
+  session_start();
+  include('admin/vendor/inc/config.php');
+  //include('vendor/inc/checklogin.php');
+  //check_login();
+  //$aid=$_SESSION['a_id'];
+?>
+<!DOCTYPE html>
+<html lang="en">
+<!--Head-->
+<?php include("vendor/inc/head.php");?>
+
+<body>
+
+  <!-- Navigation -->
+  <?php include("vendor/inc/nav.php");?>
+<!--End Navigation-->   
+```
+
+## Step-by-Step Process for Logging In and Booking a Reservation
+
+1. Login
+
+* Open the web application.
+
+* Enter your email and password in the login form.
+
+* Click the "Login" button.
+
+2. Access the Booking Page
+
+* After logging in, go to the "Book Reservation" section from the dashboard menu.
+
+3. Fill Out the Reservation Form
+
+* Enter your name, contact details, and purpose.
+
+* Choose your desired date and time.
+
+* Select a driver from the available options.
+
+* Select a vehicle from the list.
+
+4. Submit the Reservation
+
+* Review all the information.
+
+* Click the "Submit Reservation" button.
+
+5. Confirmation
+
+* A message will confirm that your reservation is pending approval.
+
+* You can view the status in the "Reservation Status" section.
+
+
+## Introduction for Admin
+
+As an Admin, you have full control over managing reservations and users within the system. You can approve or reject reservations, manage vehicle availability, assign drivers, and oversee the system’s overall operations. Your role ensures that bookings are handled smoothly and efficiently. This guide will walk you through logging in and managing reservations to maintain an organized and effective booking process.
+
+```c
+    // Admin login check
+    $sql_admin = "SELECT a_email, a_pwd, a_id FROM tms_admin WHERE a_email=? AND a_pwd=?";
+    $stmt_admin = $mysqli->prepare($sql_admin);
+    $stmt_admin->bind_param('ss', $email, $password);
+    $stmt_admin->execute();
+    $stmt_admin->store_result();
+    
+    if ($stmt_admin->num_rows == 1) {
+        $stmt_admin->bind_result($a_email, $a_pwd, $a_id);
+        $stmt_admin->fetch();
+        $_SESSION['a_id'] = $a_id;
+        header("location:admin/admin-dashboard.php");
+        exit();
+    }
+```

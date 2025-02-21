@@ -1,0 +1,141 @@
+import ArticleLayout from "@/components/ArticleLayout";
+
+export const article = {
+  author: "Jay Louie",
+  date: "2023-11-26",
+  title: "ZPPSU Web based Medical Record System",
+  description:
+    "The system offers an intuitive interface that allows users to book appointments online, select available time slots, and receive confirmation notifications. On the back-end, clinic staff can manage appointment requests, view schedules, and update availability in real time, ensuring smooth clinic operations.",
+};
+
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => <ArticleLayout article={article} {...props} />;
+
+Jaylouie Castro, a driven BS Information Technology student from Zamboanga City, has successfully developed an appointment system for his school’s clinic. This system is designed to streamline the appointment scheduling process, improving efficiency and reducing wait times for students and staff seeking medical assistance.
+
+Jaylouie’s appointment system not only improves accessibility to healthcare services but also reflects his technical proficiency and problem-solving skills. By leveraging web development and database management, he has created a reliable platform that addresses a key need within the school community. This project is a testament to Jaylouie’s dedication to using technology to enhance daily processes, and it marks another step forward in his promising IT career.
+
+```js
+</head>
+<body class="bg-primary bg-opcaity-75 bg-gradient">
+    <div class="container h-100 d-flex flex-column align-items-center justify-content-center">
+        <div class="col-6 mb-3">
+            <h1 class="text-center text-light fw-bolder">File Submission</h1>
+            <hr class="border-light">
+        </div>
+        <div class="col-lg-5">
+            <div class="card shadow">
+                <div class="card-body">
+                    <div class="container-fluid">
+
+                    <div class="row">
+                        <?php 
+                        
+                            if(isset($_SESSION['success'])) {
+                        ?>
+                            <script>
+
+                                swal("Success!", "<?php echo $_SESSION['success']; ?>", "success");
+
+                            </script>
+                        <?php    
+                            unset($_SESSION['success']);
+                            }
+
+                        ?>
+
+                    </div>
+
+```
+
+## Overview of the System
+
+The idea of web-based record systems emerged in the early 2000s as healthcare organizations recognized the potential benefits of digitizing medical records. Today, numerous companies have embraced this technology to enhance their healthcare services. 
+
+This article will discuss the concept of web-based medical record systems, their origin, and highlight five prominent companies utilizing this technology. Additionally, we will explore the importance and advantages of web-based medical record systems in the current era.
+
+Web-based medical record systems have become increasingly important in today's era due to their numerous advantages. Firstly, these systems promote enhanced accessibility and ease of sharing patient information. With web-based records, providers can access patient data from any location, eliminating the need for physical storage or transport of paper records. This enables healthcare professionals to provide accurate and timely care, especially in emergency situations.
+```c
+<div class="row">
+
+            <div class="col">
+
+                <div class="card shadow">
+
+                    <div class="card-title mx-3 mt-3">
+                        <a href="logout.php" class="btn btn-sm btn-outline-danger float-end">Logout</a>
+                        <h2>Student Documents List </h2>
+                    </div>
+
+                    <div class="card-body">
+                        
+                    <table id="myTable" class="table table-stripped ">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name</th>
+                                <th>Date Submitted</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <?php
+                                if (mysqli_num_rows($result) > 0) {
+                                $sn=1;
+                                while($data = mysqli_fetch_assoc($result)) {
+                            ?>
+```
+
+## Step-by-Step Process for ZPPSU-Appointment System
+
+1.User Registration
+
+* First-time users must create an account by providing their name, student/staff ID number, email, and password.
+
+
+* After registration, users log in using their credentials.
+
+2. Dashboard Access
+
+* Upon login, the user is directed to the appointment dashboard.
+
+* The dashboard displays available appointment slots, clinic hours, and upcoming appointments.
+
+3. Appointment Booking
+
+* Users click the “Book Appointment” button.
+
+* They select a date and time from the available slots.
+
+* Users provide any necessary details (e.g., reason for appointment or special instructions).
+
+4. Confirmation
+
+* Once a slot is selected, the user clicks “Confirm Appointment.”
+
+* A confirmation message appears on-screen, and a confirmation email or SMS is sent.
+
+5. Clinic Notification
+
+* The clinic staff is automatically notified of new appointments through their own dashboard.
+
+* They can view the appointment details and prepare accordingly.
+
+In Zamboanga city, there is one among universities and colleges once more evolve an institution known as Zamboanga Peninsula Polytechnic State University. The Zamboanga Peninsula Polytechnic State University is a state university located in the Zamboanga Peninsula region of the Philippines. It officially became a University in May 2021 by virtue of Republic Act 11187 from Zamboanga City State Polytechnic College. There are 13,682 students.  
+
+```c
+      <tr>
+              <td><?php echo $sn; ?></td>
+              <td><b> <?php echo $data['first_name'] . " " . $data['last_name'] ; ?> </b> </td>
+              <td> <?php echo $data['created_at'] ?> </td>
+
+      <td>
+              <a href="view-document.php?user_id=<?php echo $data['user_id'] ?>" class="btn btn-sm btn-warning">View</a>
+      </td>
+      </tr>
+```

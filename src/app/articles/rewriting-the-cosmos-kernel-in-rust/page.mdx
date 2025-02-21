@@ -1,0 +1,95 @@
+import ArticleLayout from "@/components/ArticleLayout";
+export const article = {
+  author: "Jaylouie",
+  date: "2025-01-20",
+  title: "ZPPSU-COMPUTER LAB Attendance System using NodeMCU and RFID",
+  description:
+    "This project aims to tackle these issues by creating a modern attendance system using NodeMCU and RFID Technology (Radio Frequency identification Technology). ",
+};
+export const metadata = {
+  title: article.title,
+  description: article.description,
+};
+
+export default (props) => <ArticleLayout article={article} {...props} />;
+
+In the rising world of new technology and innovations the only thing that holds back in our society are the old school fundamental activities and the methods which the researchers are practicing for long enough. Adding a virtue to the fundamental practices, the attendance of the students which is a necessary record of school, is the thing which have been modified in this project through introduction of RFID Technology (Radio Frequency identification Technology). The RFID (Radio Frequency identification Technology) cards used by the students enroll their attendance using the modern technology which saves time and easy to be recorded.
+
+```rust
+    <title>Users</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+
+    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/Users.css">
+
+```
+
+Since its inception at the Ivrea Interaction Design Institute, NodeMCU has powered thousands of projects, ranging from everyday gadgets to advanced scientific tools.
+
+## ZPPSU-COMPUTER LAB Attendance System using NodeMCU and RFID
+
+This project aims to tackle these issues by creating a modern attendance system using NodeMCU and RFID Technology (Radio Frequency identification Technology). NodeMCU is a popular open-source electronics platform thats both versatile and affordable, making it perfect for building interactive projects. RFID Technology (Radio Frequency identification Technology), which stands for Radio Frequency Identification, allows for quick and accurate identification using radio waves.
+
+The system is designed to be easy to use and straightforward to implement in schools. It benefits both teachers and students by making attendance tracking hassle-free. Plus, the data collected can be used to generate reports and analyze attendance trends, helping schools manage their resources better.
+
+```c
+          if (isset($_POST['delete_user'])) {
+              $user_id = $_POST['user_id'];
+              $delete_sql = "DELETE FROM users WHERE id = ?";
+              $stmt = mysqli_prepare($conn, $delete_sql);
+              mysqli_stmt_bind_param($stmt, 'i', $user_id);
+              if (mysqli_stmt_execute($stmt)) {
+                  echo "<p class='alert alert-success'>User ID $user_id deleted successfully!</p>";
+              } else {
+                  echo "<p class='alert alert-danger'>Error deleting user: " . mysqli_error($conn) . "</p>";
+              }
+          }
+
+```
+
+
+## Step-by-Step Process for ZPPSU-COMPUTER LAB Attendance System using NodeMCU and RFID 
+
+The purpose of this project is to develop a modern, efficient, and accurate school attendance monitoring system using NodeMCU and RFID Technology (Radio Frequency identification Technology). 
+
+1. Receiving the RFID Card
+
+* Collect your unique RFID card from the school administration.
+
+* Ensure you always carry your card to class.
+
+2. Entering the Classroom:
+
+* Locate the RFID scanner placed at the classroom entrance.
+
+* Hold your RFID card close to the scanner until you hear a beep or see a confirmation light.
+
+3. Confirmation:
+
+* Upon successful scanning, you will receive feedback (such as a light turning green or a message displayed on a screen) confirming that your attendance has been recorded.
+
+* If there is an issue (e.g., unregistered card or failed scan), notify your teacher or school administrator.
+
+
+The main objectives of the Attendance System with NodeMCU and RFID Technology (Radio Frequency identification Technology) can be structured using the SMART approach to ensure clarity and feasibility. Specifically, the system aims to implement automated attendance tracking using RFID Technology (Radio Frequency identification Technology) tags and NodeMCU, designed to mark and record attendance in real-time for students of College of Information and Computing Sciences and Teachers. It seeks to measure success by accurately tracking attendance for at least 95% of users. This objective is achievable within six months, leveraging accessible hardware. The goal is to improve efficiency by reducing manual tracking by 50%, with a full implementation and testing phase completed within 3 months.
+
+```c
+  <!--User table-->
+  <div class="table-responsive slideInRight animated" style="max-height: 400px;"> 
+    <table class="table">
+      <thead class="table-primary">
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Serial Number</th>
+          <th>Gender</th>
+          <th>Card UID</th>
+          <th>Date</th>
+          <th>Device</th>
+          <th>Actions</th>
+        </tr>
+
+```
