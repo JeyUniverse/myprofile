@@ -33,7 +33,7 @@ const Article = ({ article }: { article: ArticleWithSlug }) => {
   );
 };
 
-const AriclePage = async () => {
+const ArticlePage = async () => {
   const articles = await getAllArticles();
   return (
 <SimpleLayout
@@ -51,4 +51,4 @@ const AriclePage = async () => {
   );
 };
 
-export default AriclePage;
+export default ArticlePage;
