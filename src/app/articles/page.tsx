@@ -33,22 +33,22 @@ const Article = ({ article }: { article: ArticleWithSlug }) => {
   );
 };
 
-const ArticlePage = async () => {
-  const articles = await getAllArticles();
+const AriclePage = async () => {
+  const articles: ArticleWithSlug[] = await getAllArticles();
+
   return (
-<SimpleLayout
-  title="Writing on software design, company building, and the aerospace industry."
-  intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
->
-  <div className="space-y-16">
-    {articles.map((article) => (
-      <Article key={article.slug} article={article} />
-    ))}
-  </div>
-</SimpleLayout>
-
-
+    <SimpleLayout
+      title="Writing on software design, company building, and the aerospace industry."
+      intro="All of my long-form thoughts on programming, leadership, product design, and more, collected in chronological order."
+    >
+      <div className="space-y-16">
+        {articles.map((article: ArticleWithSlug) => (
+          <Article key={article.slug} article={article} />
+        ))}
+      </div>
+    </SimpleLayout>
   );
 };
+
 
 export default ArticlePage;
