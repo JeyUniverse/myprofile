@@ -51,4 +51,4 @@ const AriclePage = async () => {
 };
 
 
-export default ArticlePage;
+export default AriclePage;
