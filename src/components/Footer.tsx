@@ -7,7 +7,6 @@ const Footer = () => {
       <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
         <Link href={"/about"}>About</Link>
         <Link href="/services">Services</Link>
-        <Link href="/resume">Resume</Link>
         <Link href="/portfolio">Portfolio</Link>
         <Link href="/faq">FAQ</Link>
         <a
@@ -21,7 +20,7 @@ const Footer = () => {
       </div>
 
       <p className="text-sm text-zinc-500 dark:text-zinc-400">
-        &copy; {new Date().getFullYear()} Jay Louie Castro - Legal Assistant & Medical Records Specialist. All rights reserved.
+        &copy; {new Date().getFullYear()} Professional Virtual Assistant. All rights reserved.
       </p>
     </footer>
   );

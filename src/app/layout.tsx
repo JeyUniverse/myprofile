@@ -7,8 +7,8 @@ import Layout from "@/components/Layout";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Jay Louie Castro | Legal Assistant & Medical Records Specialist",
-  description: "Experienced Legal Assistant and Medical Records Specialist with 5+ years in pre-litigation support, case management, and medical records coordination for law firms.",
+  title: "Professional Virtual Assistant Services",
+  description: "Expert Virtual Assistant offering administrative support, email management, scheduling, data entry, and professional business support services.",
 };
 
 export default function RootLayout({

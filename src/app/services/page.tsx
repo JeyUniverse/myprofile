@@ -5,105 +5,105 @@ import { Card } from "@/components/Card";
 
 export const metadata: Metadata = {
   title: "Services",
-  description: "Legal assistant services including medical records management, case file organization, pre-litigation support, and billing verification",
+  description: "Virtual Assistant services including administrative support, email management, scheduling, and business coordination",
 };
 
 const ServicesPage = () => {
   const services = [
     {
-      title: "Medical Records Management",
+      title: "Administrative Support",
       description:
-        "Expert organization and coordination of medical records for litigation support. I request, track, obtain, and organize medical documentation with meticulous attention to detail ensuring completeness and accuracy for legal proceedings.",
+        "Handle your day-to-day administrative tasks including document management, file organization, scheduling meetings, and general office work to keep your business operations running smoothly.",
       details: [
-        "Medical records requests and tracking",
-        "Records organization and filing",
-        "Provider coordination",
-        "Completeness verification",
+        "Calendar and appointment management",
+        "Document organization and filing",
+        "General office administration",
+        "Task and project tracking",
       ],
     },
     {
-      title: "Case Management & Client Intake",
+      title: "Email & Communication Management",
       description:
-        "Comprehensive case management using industry-standard tools like Filevine and Clio. I handle intake processes, maintain client communication, track case progress, and ensure all case files are properly organized and documented.",
+        "Professional management of your inbox, prioritization of important emails, drafting responses, and organizing communication to ensure nothing falls through the cracks.",
       details: [
-        "Client intake and case opening",
-        "Case file management (Filevine, Clio)",
-        "Client communication tracking",
-        "Case status monitoring",
+        "Inbox organization and filtering",
+        "Email prioritization",
+        "Professional correspondence",
+        "Communication templates",
       ],
     },
     {
-      title: "Billing Documentation & Verification",
+      title: "Data Entry & Database Management",
       description:
-        "Accurate review and verification of medical billing statements and balance information. I ensure all billing documentation is complete, accurate, and ready for demand preparation with meticulous reconciliation.",
+        "Accurate and efficient data entry, spreadsheet management, database updates, and information organization tailored to your business processes and systems.",
       details: [
-        "Billing statement review",
-        "Balance verification",
-        "Billing accuracy checks",
-        "Documentation organization",
+        "Data entry and verification",
+        "Spreadsheet management",
+        "Database updates",
+        "Information organization",
       ],
     },
     {
-      title: "Insurance Claims & Coverage Management",
+      title: "Scheduling & Coordination",
       description:
-        "Expert handling of auto insurance claims, coverage verification, and policy documentation. I obtain policy limits information, declaration pages, and maintain coordination with insurance carriers for timely updates.",
+        "Manage your schedule, coordinate meetings, handle appointment confirmations, and ensure smooth scheduling across all your commitments and client interactions.",
       details: [
-        "Insurance claim opening and tracking",
-        "Coverage verification",
-        "Policy limits research",
-        "Carrier coordination",
+        "Meeting coordination",
+        "Appointment scheduling",
+        "Calendar synchronization",
+        "Reminder management",
       ],
     },
     {
-      title: "Pre-Litigation Documentation & Support",
+      title: "Client Communication & Support",
       description:
-        "Comprehensive support for pre-litigation and pre-demand phases. I organize all required documentation, conduct thorough file reviews, and ensure case files are complete before advancing to demand phase.",
+        "Professional handling of client inquiries, customer follow-ups, and business correspondence to maintain strong relationships and ensure responsive communication.",
       details: [
-        "Pre-litigation file organization",
-        "Documentation completeness review",
-        "File advancement tracking",
-        "Quality assurance checks",
+        "Customer inquiry responses",
+        "Client follow-ups",
+        "Professional email management",
+        "Response coordination",
       ],
     },
     {
-      title: "Lien Management & Reviews",
+      title: "Research & Documentation",
       description:
-        "Professional handling of subrogation claims and final lien reviews. I track lien status, conduct detailed reviews prior to case resolution, and ensure all lien documentation is properly organized and verified.",
+        "Comprehensive research on business topics, report compilation, documentation creation, and information gathering to support your business initiatives and decision-making.",
       details: [
-        "Subrogation claim tracking",
-        "Lien status monitoring",
-        "Final lien reviews",
-        "Resolution documentation",
+        "Business research",
+        "Report compilation",
+        "Documentation creation",
+        "Information synthesis",
       ],
     },
     {
-      title: "Provider & Carrier Coordination",
+      title: "Project Coordination",
       description:
-        "Professional communication and coordination with medical providers and insurance representatives. I manage follow-ups, obtain necessary information, and ensure timely responses to support case progress.",
+        "Coordinate multiple projects simultaneously, track progress, manage timelines, and ensure smooth execution of business operations and initiatives.",
       details: [
-        "Provider communication",
-        "Carrier coordination",
-        "Follow-up management",
-        "Information requests",
-      ],
-    },
-    {
-      title: "Legal Administrative Support",
-      description:
-        "General legal administrative support including document preparation, file organization, and office administration to support your legal team&apos;s efficiency and case management.",
-      details: [
-        "Document preparation and filing",
-        "Administrative organization",
+        "Project management",
+        "Timeline tracking",
+        "Progress monitoring",
         "Task coordination",
-        "File management",
+      ],
+    },
+    {
+      title: "Social Media & Online Presence",
+      description:
+        "Assist with managing social media profiles, content scheduling, and online presence to support your brand visibility and client engagement.",
+      details: [
+        "Content scheduling",
+        "Profile management",
+        "Post coordination",
+        "Engagement tracking",
       ],
     },
   ];
 
   return (
     <SimpleLayout
-      title="Legal & Pre-Litigation Support Services"
-      intro="I offer specialized legal assistant services designed to support law firms in pre-litigation matters. With 5+ years of dedicated experience in medical records management, case administration, and pre-demand support, I&apos;m equipped to handle complex caseloads with precision and professionalism."
+      title="Virtual Assistant Services"
+      intro="I offer comprehensive virtual assistant services designed to support your business growth and operational efficiency. Whether you need ongoing support or project-based assistance, I'm equipped to handle your needs professionally and reliably."
     >
       <ul
         role="list"

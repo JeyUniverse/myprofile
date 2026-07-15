@@ -23,16 +23,16 @@ const AboutPage = () => {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I&apos;m a detail-oriented legal professional with over 5 years of specialized experience in pre-litigation support, medical records management, and case administration. As a BS Information Technology graduate with a strong emphasis on legal operations, I bring both technical proficiency and legal expertise to streamline complex case workflows. My career foundation in legal administrative support has equipped me to manage high-volume caseloads while maintaining exceptional accuracy and client satisfaction.
+              I&apos;m a professional Virtual Assistant dedicated to helping businesses and entrepreneurs streamline their operations and achieve their goals. With a strong background in organization, communication, and administrative excellence, I provide reliable support that lets you focus on what matters most—growing your business.
             </p>
             <p>
-              Throughout my career as a Medical Records Specialist and Assistant Case Manager at a US-based law firm, I&apos;ve honed expertise in client intake, case management, medical records organization, billing verification, and pre-demand documentation. I&apos;m proficient in industry-standard tools including Filevine and Clio, with strong capabilities in Microsoft Office, Google Workspace, and digital file management. My work involves coordinating with medical providers, insurance representatives, and legal teams to ensure all case documentation is complete, accurate, and ready for demand phase.
+              My expertise spans administrative support, email and calendar management, data entry, scheduling, and client coordination. I take pride in being detail-oriented, proactive, and committed to delivering high-quality work. Every project I handle reflects my commitment to professionalism and reliability. I understand that time is your most valuable resource, and I&apos;m here to manage the tasks that would otherwise consume it.
             </p>
             <p>
-              My approach is systematic and detail-focused. I understand that legal cases demand precision—every document must be organized, every balance verified, and every communication tracked. I&apos;ve successfully managed complex Personal Injury caseloads from intake through pre-demand stage, ensuring nothing falls through the cracks. Whether coordinating medical records requests, verifying insurance coverage, or conducting lien reviews, I deliver the meticulous support that legal teams depend on.
+              Over time, I&apos;ve developed a passion for helping businesses run more efficiently. Whether you&apos;re a solopreneur, a small business owner, or part of a larger team, I&apos;m equipped to handle the administrative workload that keeps operations smooth. My approach is flexible and tailored to your specific needs—I work with you to understand your priorities and deliver exactly what your business requires.
             </p>
             <p>
-              Beyond my professional experience, I&apos;m committed to continuous learning and staying current with legal industry standards. I hold certifications from multiple professional organizations and regularly engage in professional development. I take pride in being a reliable, proactive team member who understands that exceptional legal support directly impacts client outcomes and case success.
+              Beyond the office, I value continuous learning and personal growth. The skills I&apos;ve developed—patience, adaptability, problem-solving, and attention to detail—drive everything I do. When I&apos;m not supporting clients, I enjoy staying updated on business trends and best practices to bring added value to every engagement.
             </p>
           </div>
         </div>
