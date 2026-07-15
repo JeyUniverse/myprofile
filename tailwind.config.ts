@@ -8,6 +8,16 @@ export default {
   darkMode: "selector",
   plugins: [typographyPlugin],
   theme: {
+    extend: {
+      colors: {
+        background: "#f5f1ed",
+        foreground: "#1a1a1a",
+        "cream-50": "#fdfbf8",
+        "cream-100": "#f5f1ed",
+        "cream-200": "#ede6dd",
+        "teal-accent": "#1b7f7e",
+      },
+    },
     fontSize: {
       xs: ["0.8125rem", { lineHeight: "1.5rem" }],
       sm: ["0.875rem", { lineHeight: "1.5rem" }],

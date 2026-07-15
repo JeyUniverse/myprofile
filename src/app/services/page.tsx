@@ -1,7 +1,6 @@
 import SimpleLayout from "@/components/SimpleLayout";
-import React from "react";
 import { type Metadata } from "next";
-import { Card } from "@/components/Card";
+import { ServiceDropdown } from "@/components/ServiceDropdown";
 
 export const metadata: Metadata = {
   title: "Services",
@@ -107,28 +106,16 @@ const ServicesPage = () => {
     >
       <ul
         role="list"
-        className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2"
+        className="space-y-4"
       >
         {services.map((service) => (
-          <Card as="li" key={service.title}>
-            <h2 className="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
-              {service.title}
-            </h2>
-            <Card.Description>{service.description}</Card.Description>
-            <div className="mt-4 space-y-2">
-              <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-300 uppercase">
-                Includes:
-              </p>
-              <ul className="text-sm text-zinc-600 dark:text-zinc-400 space-y-1">
-                {service.details.map((detail) => (
-                  <li key={detail} className="flex items-start">
-                    <span className="mr-2 text-teal-500">•</span>
-                    <span>{detail}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </Card>
+          <li key={service.title} className="animate-fade-in">
+            <ServiceDropdown
+              title={service.title}
+              description={service.description}
+              details={service.details}
+            />
+          </li>
         ))}
       </ul>
     </SimpleLayout>

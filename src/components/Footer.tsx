@@ -3,25 +3,25 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="px-10 border-t border-t-zinc-500 py-10 dark:border-zinc-700/40 flex items-center justify-between">
-      <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-zinc-800 dark:text-zinc-200">
-        <Link href={"/about"}>About</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/resume">Resume</Link>
-        <Link href="/portfolio">Portfolio</Link>
-        <Link href="/faq">FAQ</Link>
+    <footer className="px-10 border-t-2 border-cream-200 py-10 flex items-center justify-between bg-cream-100 smooth-transition">
+      <div className="flex flex-wrap justify-center gap-x-6 gap-y-1 text-sm font-medium text-foreground">
+        <Link href={"/about"} className="hover:text-teal-accent smooth-transition">About</Link>
+        <Link href="/services" className="hover:text-teal-accent smooth-transition">Services</Link>
+        <Link href="/resume" className="hover:text-teal-accent smooth-transition">Resume</Link>
+        <Link href="/portfolio" className="hover:text-teal-accent smooth-transition">Portfolio</Link>
+        <Link href="/faq" className="hover:text-teal-accent smooth-transition">FAQ</Link>
         <a
           href="https://linkedin.com"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-teal-500 hover:text-teal-600 dark:hover:text-teal-400"
+          className="text-teal-accent hover:text-teal-600 smooth-transition font-semibold"
         >
           LinkedIn
         </a>
       </div>
 
-      <p className="text-sm text-zinc-500 dark:text-zinc-400">
-        &copy; {new Date().getFullYear()} Jay Louie Castro - Legal Assistant & Medical Records Specialist. All rights reserved.
+      <p className="text-sm text-gray-600">
+        &copy; {new Date().getFullYear()} Jay Louie Castro - Legal Assistant & Medical Records Specialist.
       </p>
     </footer>
   );

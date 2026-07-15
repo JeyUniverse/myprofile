@@ -17,10 +17,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={inter.className}>
+    <html lang="en" className="bg-cream-100">
+      <body className={`${inter.className} bg-cream-100`}>
         <Providers>
-          <div className="flex w-full bg-black overflow-hidden">
+          <div className="flex w-full bg-cream-100 overflow-hidden">
             <Layout>{children}</Layout>
           </div>
         </Providers>
