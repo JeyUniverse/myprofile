@@ -22,15 +22,15 @@ const NavItem = ({
       <Link
         href={href}
         className={clsx(
-          "relative block px-3 py-2 smooth-transition hover:text-teal-accent",
+          "relative block px-3 py-2 transition",
           isActive
-            ? "text-teal-accent font-semibold"
-            : "text-foreground"
+            ? "text-teal-500 dark:text-teal-400"
+            : "hover:text-teal-500 dark:hover:text-teal-400"
         )}
       >
         {children}
         {isActive && (
-          <span className="absolute inset-x-1 -bottom-px h-1 bg-teal-accent rounded-full" />
+          <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-50/0 via-teal-500/40 to-teal-50/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
         )}
       </Link>
     </li>
@@ -40,7 +40,7 @@ const NavItem = ({
 const DesktopNavigation = (props: React.ComponentPropsWithRef<"nav">) => {
   return (
     <nav {...props}>
-      <ul className="flex rounded-md bg-cream-50 px-4 py-2 text-sm font-medium text-foreground shadow-md shadow-black/5 ring-1 ring-black/5 backdrop-blur smooth-transition">
+      <ul className="flex rounded-md bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/about">About</NavItem>
         <NavItem href="/services">Services</NavItem>
         <NavItem href="/resume">Resume</NavItem>
@@ -76,9 +76,9 @@ const MobileNavigation = (
 ) => {
   return (
     <Popover {...props}>
-      <Popover.Button className="group flex items-center rounded-full bg-cream-50 px-4 py-2 text-sm font-medium text-foreground shadow-md shadow-black/5 ring-1 ring-black/5 backdrop-blur smooth-transition hover:bg-cream-200">
+      <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
         Menu
-        <FaChevronDown className="ml-3 h-auto w-2 group-hover:text-teal-accent smooth-transition" />
+        <FaChevronDown className="ml-3 h-auto w-2 stroke-zinc-50 group-hover:stroke-zinc-700 dark:group-hover:stroke-zinc-400" />
       </Popover.Button>
       <Transition.Root>
         <Transition.Child
@@ -131,12 +131,12 @@ const MobileNavigation = (
 
 const Header = () => {
   return (
-    <header className="top-0 -mb-3 py-5 w-full mx-auto px-4 md:px-10 flex gap-10 justify-between items-center bg-cream-100 shadow-sm smooth-transition animate-slide-in-down">
+    <header className="top-0 -mb-3 py-5 w-full mx-auto px-4 md:px-10 flex gap-10 justify-between items-center">
       <Link href={"/"}>
         <Image
           src={profile}
           alt="Profile logo"
-          className="w-12 h-12 rounded-full object-cover hover:shadow-lg smooth-transition"
+          className="w-12 h-12 rounded-full object-cover"
         />
       </Link>
       <div className="flex md:flex-1 justify-end md:justify-center">
@@ -149,7 +149,7 @@ const Header = () => {
           href="https://linkedin.com" // Replace with your LinkedIn profile URL
           target="_blank"
           rel="noopener noreferrer"
-          className="primary-button"
+          className="text-teal-500 px-8 py-2 rounded-full dark:bg-black text-sm uppercase border border-teal-800 hover:text-teal-800 dark:hover:text-teal-200 hover:border-teal-700 duration-300"
         >
           LinkedIn
         </a>
