@@ -42,9 +42,9 @@ const DesktopNavigation = (props: React.ComponentPropsWithRef<"nav">) => {
     <nav {...props}>
       <ul className="flex rounded-md bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
         <NavItem href="/about">About</NavItem>
-        <NavItem href="/articles">Articles</NavItem>
-        <NavItem href="/projects">Projects</NavItem>
-        <NavItem href="/uses">Uses</NavItem>
+        <NavItem href="/services">Services</NavItem>
+        <NavItem href="/portfolio">Portfolio</NavItem>
+        <NavItem href="/faq">FAQ</NavItem>
       </ul>
     </nav>
   );
@@ -115,9 +115,9 @@ const MobileNavigation = (
             <nav className="mt-6">
               <ul className="-my-2 text-base text-zinc-800 dark:divide-zinc-100/5 dark:text-zinc-300">
                 <MobileNavItem href="/about">About</MobileNavItem>
-                <MobileNavItem href="/articles">Articles</MobileNavItem>
-                <MobileNavItem href="/projects">Projects</MobileNavItem>
-                <MobileNavItem href="/uses">Uses</MobileNavItem>
+                <MobileNavItem href="/services">Services</MobileNavItem>
+                <MobileNavItem href="/portfolio">Portfolio</MobileNavItem>
+                <MobileNavItem href="/faq">FAQ</MobileNavItem>
               </ul>
             </nav>
           </Popover.Panel>
@@ -142,14 +142,14 @@ const Header = () => {
         <DesktopNavigation className="pointer-events-auto hidden md:block" />
       </div>
       <div className="flex items-center gap-5">
-        {/* "Contact Me" button */}
+        {/* "Connect on LinkedIn" button */}
         <a
-          href="https://m.me/jaylouie.castro.7" // Replace with your Messenger username
+          href="https://linkedin.com" // Replace with your LinkedIn profile URL
           target="_blank"
           rel="noopener noreferrer"
           className="text-teal-500 px-8 py-2 rounded-full dark:bg-black text-sm uppercase border border-teal-800 hover:text-teal-800 dark:hover:text-teal-200 hover:border-teal-700 duration-300"
         >
-          Contact Me
+          LinkedIn
         </a>
         {/* MobileNavigation */}
         <MobileNavigation className="pointer-events-auto md:hidden" />

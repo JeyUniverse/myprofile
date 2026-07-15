@@ -11,7 +11,7 @@ const AboutPage = () => {
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               src={portraitImage}
-              alt="image"
+              alt="Professional Virtual Assistant"
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
@@ -19,17 +19,20 @@ const AboutPage = () => {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            This is me, and this is all about ME.
+            About Me
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            A highly motivated BS Information Technology student with a strong foundation in web development, programming, and IoT. Experienced in developing Next.js web applications and Arduino-based projects. Adept at problem-solving, coding, and collaborating on technical projects to create innovative solutions. Eager to leverage technical skills and creativity to contribute to dynamic IT environments and pursue a career in software development and IoT innovation.
+              I&apos;m a professional Virtual Assistant dedicated to helping businesses and entrepreneurs streamline their operations and achieve their goals. With a strong background in organization, communication, and administrative excellence, I provide reliable support that lets you focus on what matters most—growing your business.
             </p>
             <p>
-            When I was 18, I developed a deep love for fishing that became one of my favorite pastimes. There was something peaceful yet exciting about being near the water, waiting patiently for the right moment, and feeling the thrill of a catch. Fishing taught me patience, attention to detail, and how to adapt to different environments—skills that I’ve found helpful in my journey as an IT student. It also gave me a sense of calm and focus, which helped me clear my mind and stay grounded, even during challenging times. The memories and lessons from those fishing trips have stayed with me and continue to shape my outlook today.
+              My expertise spans administrative support, email and calendar management, data entry, scheduling, and client coordination. I take pride in being detail-oriented, proactive, and committed to delivering high-quality work. Every project I handle reflects my commitment to professionalism and reliability. I understand that time is your most valuable resource, and I&apos;m here to manage the tasks that would otherwise consume it.
             </p>
             <p>
-            Today, Im a 21-year-old BS Information Technology student from Zamboanga City, Philippines, passionate about technology and innovation. I’m currently working on projects that involve web development using Next.js and Arduino, combining creativity with problem-solving to develop practical tech solutions. My journey in IT has been shaped by hands-on experience, a drive to continuously learn, and the curiosity to explore new technologies. Outside of academics, I still hold onto lessons from my past, like patience and adaptability, which I first learned through fishing. These values guide me in both personal and professional endeavors, as I work toward building a successful career in the tech industry.
+              Over time, I&apos;ve developed a passion for helping businesses run more efficiently. Whether you&apos;re a solopreneur, a small business owner, or part of a larger team, I&apos;m equipped to handle the administrative workload that keeps operations smooth. My approach is flexible and tailored to your specific needs—I work with you to understand your priorities and deliver exactly what your business requires.
+            </p>
+            <p>
+              Beyond the office, I value continuous learning and personal growth. The skills I&apos;ve developed—patience, adaptability, problem-solving, and attention to detail—drive everything I do. When I&apos;m not supporting clients, I enjoy staying updated on business trends and best practices to bring added value to every engagement.
             </p>
           </div>
         </div>
