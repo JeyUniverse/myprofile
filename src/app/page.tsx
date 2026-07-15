@@ -1,42 +1,82 @@
-import { Card } from "@/components/Card";
 import Container from "@/components/Container";
 import Hero from "@/components/Hero";
-import Newsletter from "@/components/Newsletter";
-import Photos from "@/components/Photos";
-import Resume from "@/components/Resume";
-import { ArticleWithSlug, getAllArticles } from "@/lib/article";
-import { formatDate } from "@/lib/formateDate";
-
-const Article = ({ article }: { article: ArticleWithSlug }) => {
-  return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow>{formatDate(article.date)}</Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
-  );
-};
+import { Card } from "@/components/Card";
+import Link from "next/link";
 
 export default async function Home() {
-  let articles: ArticleWithSlug[] = (await getAllArticles()).slice(0, 4);
+  const services = [
+    {
+      title: "Medical Records Management",
+      description: "Expert coordination and organization of medical records for litigation support. Request, track, and organize documentation with meticulous attention to detail.",
+    },
+    {
+      title: "Case Management",
+      description: "Comprehensive case management using Filevine and Clio. Handle intake, maintain client communication, track progress, and organize case files.",
+    },
+    {
+      title: "Billing & Balance Verification",
+      description: "Accurate review and verification of medical billing statements and balance information to ensure completeness before demand preparation.",
+    },
+    {
+      title: "Insurance Claims Management",
+      description: "Expert handling of auto insurance claims, coverage verification, policy limits research, and coordination with insurance carriers.",
+    },
+    {
+      title: "Pre-Litigation Support",
+      description: "Comprehensive support for pre-litigation and pre-demand phases, including documentation organization and file advancement tracking.",
+    },
+    {
+      title: "Lien Management & Reviews",
+      description: "Professional handling of subrogation claims, lien status monitoring, and final reviews prior to case resolution.",
+    },
+  ];
 
   return (
     <main>
       <Hero />
-      <Photos />
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
-          <div className="flex flex-col gap-16">
-            {articles.map((article: ArticleWithSlug) => (
-              <Article key={article.slug} article={article} />
-            ))}
-          </div>
-          <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
-            <Resume />
+        <div className="max-w-2xl">
+          <h2 className="text-3xl font-bold tracking-tight text-zinc-800 sm:text-4xl dark:text-zinc-100 mb-4">
+            Legal Support Services
+          </h2>
+          <p className="text-base text-zinc-600 dark:text-zinc-400 mb-12">
+            I provide specialized legal assistant support for pre-litigation matters with 5+ years of proven experience in medical records management, case administration, and pre-demand support. Here are the core services I offer:
+          </p>
+        </div>
+        <ul role="list" className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3">
+          {services.map((service) => (
+            <Card as="li" key={service.title}>
+              <h3 className="mt-6 text-lg font-semibold text-zinc-800 dark:text-zinc-100">
+                {service.title}
+              </h3>
+              <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
+                {service.description}
+              </p>
+            </Card>
+          ))}
+        </ul>
+        <div className="mt-16 max-w-2xl">
+          <h2 className="text-2xl font-bold tracking-tight text-zinc-800 sm:text-3xl dark:text-zinc-100 mb-4">
+            View My Full Resume
+          </h2>
+          <p className="text-base text-zinc-600 dark:text-zinc-400 mb-6">
+            For a complete overview of my experience, education, and certifications, check out my detailed resume. Let&apos;s discuss how I can support your legal team.
+          </p>
+          <div className="flex gap-4">
+            <Link
+              href="/resume"
+              className="inline-block text-teal-500 px-8 py-3 rounded-full dark:bg-black text-sm uppercase border border-teal-800 hover:text-teal-800 dark:hover:text-teal-200 hover:border-teal-700 duration-300"
+            >
+              View Resume
+            </Link>
+            <Link
+              href="https://linkedin.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block text-teal-500 px-8 py-3 rounded-full dark:bg-black text-sm uppercase border border-teal-800 hover:text-teal-800 dark:hover:text-teal-200 hover:border-teal-700 duration-300"
+            >
+              Connect on LinkedIn
+            </Link>
           </div>
         </div>
       </Container>

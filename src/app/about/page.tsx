@@ -11,7 +11,7 @@ const AboutPage = () => {
           <div className="max-w-xs px-2.5 lg:max-w-none">
             <Image
               src={portraitImage}
-              alt="image"
+              alt="Professional Virtual Assistant"
               sizes="(min-width: 1024px) 32rem, 20rem"
               className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
             />
@@ -19,17 +19,20 @@ const AboutPage = () => {
         </div>
         <div className="lg:order-first lg:row-span-2">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            This is me, and this is all about ME.
+            About Me
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-            A highly motivated BS Information Technology student with a strong foundation in web development, programming, and IoT. Experienced in developing Next.js web applications and Arduino-based projects. Adept at problem-solving, coding, and collaborating on technical projects to create innovative solutions. Eager to leverage technical skills and creativity to contribute to dynamic IT environments and pursue a career in software development and IoT innovation.
+              I&apos;m a detail-oriented legal professional with over 5 years of specialized experience in pre-litigation support, medical records management, and case administration. As a BS Information Technology graduate with a strong emphasis on legal operations, I bring both technical proficiency and legal expertise to streamline complex case workflows. My career foundation in legal administrative support has equipped me to manage high-volume caseloads while maintaining exceptional accuracy and client satisfaction.
             </p>
             <p>
-            When I was 18, I developed a deep love for fishing that became one of my favorite pastimes. There was something peaceful yet exciting about being near the water, waiting patiently for the right moment, and feeling the thrill of a catch. Fishing taught me patience, attention to detail, and how to adapt to different environments—skills that I’ve found helpful in my journey as an IT student. It also gave me a sense of calm and focus, which helped me clear my mind and stay grounded, even during challenging times. The memories and lessons from those fishing trips have stayed with me and continue to shape my outlook today.
+              Throughout my career as a Medical Records Specialist and Assistant Case Manager at a US-based law firm, I&apos;ve honed expertise in client intake, case management, medical records organization, billing verification, and pre-demand documentation. I&apos;m proficient in industry-standard tools including Filevine and Clio, with strong capabilities in Microsoft Office, Google Workspace, and digital file management. My work involves coordinating with medical providers, insurance representatives, and legal teams to ensure all case documentation is complete, accurate, and ready for demand phase.
             </p>
             <p>
-            Today, Im a 21-year-old BS Information Technology student from Zamboanga City, Philippines, passionate about technology and innovation. I’m currently working on projects that involve web development using Next.js and Arduino, combining creativity with problem-solving to develop practical tech solutions. My journey in IT has been shaped by hands-on experience, a drive to continuously learn, and the curiosity to explore new technologies. Outside of academics, I still hold onto lessons from my past, like patience and adaptability, which I first learned through fishing. These values guide me in both personal and professional endeavors, as I work toward building a successful career in the tech industry.
+              My approach is systematic and detail-focused. I understand that legal cases demand precision—every document must be organized, every balance verified, and every communication tracked. I&apos;ve successfully managed complex Personal Injury caseloads from intake through pre-demand stage, ensuring nothing falls through the cracks. Whether coordinating medical records requests, verifying insurance coverage, or conducting lien reviews, I deliver the meticulous support that legal teams depend on.
+            </p>
+            <p>
+              Beyond my professional experience, I&apos;m committed to continuous learning and staying current with legal industry standards. I hold certifications from multiple professional organizations and regularly engage in professional development. I take pride in being a reliable, proactive team member who understands that exceptional legal support directly impacts client outcomes and case success.
             </p>
           </div>
         </div>
